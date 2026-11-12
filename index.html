@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Raj ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- COUNTDOWN SCREEN -->
+  <section id="lockScreen" class="screen lock-screen">
+    <div class="lock-card">
+      <p class="eyebrow">A little surprise is waiting</p>
+      <div class="heart">♡</div>
+      <h1>Someone special is turning a year older...</h1>
+      <p class="soft-text">Your birthday surprise will open on 15 November.</p>
+
+      <div class="countdown">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+
+      <p class="small-note">A little patience, birthday boy ♡</p>
+      <p class="preview-hint">For testing: add <b>?preview=1</b> at the end of the website URL.</p>
+    </div>
+  </section>
+
+  <!-- UNLOCK SCREEN -->
+  <section id="unlockScreen" class="screen unlock-screen">
+    <div class="unlock-card">
+      <p class="eyebrow">It's your day!</p>
+      <div class="heart">♡</div>
+      <h1>Happy Birthday, Raj!</h1>
+      <p class="soft-text">I made a little something for you. Ready?</p>
+      <button id="enterButton" class="primary-button">Enter Your Birthday Surprise ♡</button>
+    </div>
+  </section>
+
+  <!-- MAIN BIRTHDAY WEBSITE -->
+  <main id="birthdayWebsite" class="birthday-website">
+
+    <!-- HERO -->
+    <header class="hero">
+      <p class="script-line">A day made for you...</p>
+      <p class="eyebrow">15 November 2026</p>
+      <h1>Happy Birthday,<br><span>Raj ♡</span></h1>
+      <p class="hero-copy">
+        Today is all about celebrating you, your smile, your dreams
+        and the beautiful person you are.
+      </p>
+      <button id="startButton" class="primary-button">A little journey awaits ↓</button>
+      <div class="hero-doodle">♡ &nbsp; ✧ &nbsp; ♡</div>
+    </header>
+
+    <!-- WELCOME -->
+    <section class="section-wrap intro" id="welcome">
+      <p class="eyebrow">Before anything else</p>
+      <h2>To my favourite person</h2>
+      <p>
+        I wanted to make something that you could keep and revisit.
+        Not just a birthday wish, but a little collection of moments,
+        words and feelings that remind you how special you are.
+      </p>
+      <p id="surprise" class="script-line">This little corner is just for you. ♡</p>
+    </section>
+
+    <!-- CHILDHOOD PHOTOS -->
+    <section class="section-wrap" id="childhood">
+      <p class="eyebrow">Once upon a time</p>
+      <h2>Little Raj</h2>
+      <p class="section-intro">
+        Before all the memories we share, there was this little boy.
+      </p>
+
+      <div class="photo-grid">
+        <figure class="polaroid">
+          <img src="assets/childhood-1.jpeg" alt="Raj childhood photo">
+          <figcaption>Little sunshine ♡</figcaption>
+        </figure>
+
+        <figure class="polaroid tilt">
+          <img src="assets/childhood-2.jpeg" alt="Raj childhood photo">
+          <figcaption>Look at that smile!</figcaption>
+        </figure>
+      </div>
+      <p class="photo-tip">Two little memories from the beginning of your story.</p>
+    </section>
+
+    <!-- MEMORY LANE -->
+    <section class="section-wrap memory-section" id="memories">
+      <p class="eyebrow">A few pages from us</p>
+      <h2>Our Memory Lane</h2>
+      <p class="section-intro">
+        Some moments may look ordinary to the world,
+        but they mean a little more to me.
+      </p>
+
+      <div class="memory-grid">
+        <article class="memory-card">
+          <img src="assets/memory-1.jpeg" alt="Our memory one">
+          <span class="memory-date">A special memory</span>
+          <h3>The beginning</h3>
+          <p>Every beautiful story has a beginning. This one is ours.</p>
+        </article>
+
+        <article class="memory-card">
+          <img src="assets/memory-2.jpeg" alt="Our memory two">
+          <span class="memory-date">A favourite moment</span>
+          <h3>Us, being us</h3>
+          <p>The little moments with you always find a place in my heart.</p>
+        </article>
+
+        <article class="memory-card">
+          <img src="assets/memory-3.jpeg" alt="Our memory three">
+          <span class="memory-date">A memory to keep</span>
+          <h3>My kind of happiness</h3>
+          <p>Some pictures hold feelings that words cannot explain.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 15 REASONS -->
+    <section class="section-wrap reasons-section" id="reasons">
+      <p class="eyebrow">A little list</p>
+      <h2>15 Reasons I Adore You</h2>
+      <p class="section-intro">Tap each card to reveal a reason. ♡</p>
+
+      <p id="reasonCounter" class="reason-counter">0 / 15 opened</p>
+      <div id="reasonsGrid" class="reasons-grid"></div>
+      <p id="reasonEnding" class="reason-ending"></p>
+    </section>
+
+  
+    
+<!-- BIRTHDAY LETTER -->
+<section class="section-wrap letter-section" id="letter">
+  <p class="eyebrow">A letter from my heart to yours</p>
+  <h2>Our story, my favourite person</h2>
+  <p class="section-intro">Some feelings deserve more than a simple birthday wish. ♡</p>
+
+  <button id="letterButton" class="primary-button">Open your letter ♡</button>
+
+  <article class="letter-paper" id="letterContent" hidden>
+    <p class="letter-greeting">My dearest Raj, my honey,</p>
+
+    <p>
+      Happy Birthday, my love! ❤️
+    </p>
+
+    <p>
+      I honestly don't know where to begin because there is so much
+      I want to tell you. When I look back at how far we have come,
+      I can't help but smile. From the beginning, to all those little
+      conversations, silly fights, endless talks, laughter, surprises
+      and memories that only we understand... look at us now.
+      We have come so far, haven't we?
+    </p>
+
+    <p>
+      Sometimes I think about how two people who once didn't know
+      what their story would become ended up creating so many
+      beautiful memories together. We have had our sweetest moments
+      and our difficult days too. There were times when things weren't
+      easy, but every experience has become a part of our story.
+      And despite everything, here we are, celebrating another
+      birthday of yours together.
+    </p>
+
+    <p>
+      Raj, do you remember once you said that if we stayed together
+      until this birthday, I would become your forever?
+      I STILL REMEMBER THAT LINE. I don't know if you remember
+      saying it, but I remember exactly how it made me feel.
+      And today, here we are. Your birthday is here, and that little
+      sentence still lives in my heart. I hope we keep choosing each
+      other, not just for birthdays, but for all the ordinary days
+      and extraordinary moments waiting for us.
+    </p>
+
+    <p>
+      I want you to know how proud I am of you. I want to see you
+      achieve every dream you have ever spoken about. I want to see
+      you grow, succeed, become the person you dream of being and
+      enjoy every little victory along the way. Even when life gets
+      difficult, never doubt yourself. I will always wish the very
+      best for you.
+    </p>
+
+    <p>
+      And my honey, I love you so, so hard. More than these words
+      can ever explain. I can't wait to spend my whole life with you.
+      I dream about all the little things too: celebrating birthdays
+      together, annoying each other, travelling, laughing over
+      absolutely nothing, supporting each other's dreams and
+      growing old with a thousand stories to tell.
+    </p>
+
+    <p>
+      I don't expect every day to be perfect. I just hope that
+      whatever life brings, we keep understanding each other,
+      communicating, respecting each other and never stop making
+      beautiful memories. I want a love that grows with time,
+      becomes stronger with every chapter and feels like home.
+    </p>
+
+    <p>
+      On your birthday, I wish you endless happiness, good health,
+      success, peace and all the love your heart deserves.
+      Never stop smiling that smile of yours. And please never
+      forget how special you are to me.
+    </p>
+
+    <p>
+      Thank you for being a part of my life, for the memories,
+      for the laughter and for giving me so many reasons to
+      believe in our little story.
+    </p>
+
+    <p>
+      Here's to this birthday, to everything we've been through,
+      to everything we are today and to all the beautiful years
+      I hope we get to share.
+    </p>
+
+    <p>
+      I love you endlessly, my Raj. Happy Birthday once again,
+      my favourite boy. ♡
+    </p>
+
+    <p class="letter-signature">
+      Forever wishing for us,<br>
+      Your Girl (Gatyaa)
+    </p>
+  </article>
+</section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-heart">♡</div>
+      <p>Made with love, just for you.</p>
+      <p class="footer-small">Happy Birthday, Raj · 15.11.2026</p>
+    </footer>
+
+  </main>
+
+  <!-- BACKGROUND BIRTHDAY MUSIC -->
+  <audio
+    id="bgMusic"
+    src="assets/birthday-song.mp3"
+    loop
+    preload="auto">
+  </audio>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
